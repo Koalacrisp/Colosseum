@@ -16,10 +16,10 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Burger.associate = function(models) {
-    Burger.belongsTo(models.Person, {});
+  Comment.associate = function(models) {
+    Comment.belongsTo(models.Person, {});
   };
 
-  return Burger;
+  return Comment;
 };
 
