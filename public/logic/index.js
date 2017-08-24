@@ -21,3 +21,98 @@ $.ajax({
    		video: videoID
 	});
 });
+
+$("#lol").on("click", function(event){
+  event.preventDefault();
+  $("#twitchStream").empty();
+  var lolURL = "https://api.twitch.tv/kraken/videos/top?client_id=ek5jw2l4w4l862xwyzmwlta09aewyd&game=League%20of%20Legends";
+  $.ajax({
+      url: lolURL,
+      method: "GET"
+  }).done(function(selected) {
+    // Sets the video to use from the api as videoID
+    var videoID = selected.videos[0]._id;
+    // Embeds the twitch video stream
+      new Twitch.Embed("twitchStream", {
+        width: 440,
+        height: 250,
+        video: videoID
+    });
+  });
+})
+
+$("#dota").on("click", function(event){
+  event.preventDefault();
+  $("#twitchStream").empty();
+  var dotaURL = "https://api.twitch.tv/kraken/videos/top?client_id=ek5jw2l4w4l862xwyzmwlta09aewyd&game=Dota%202";
+  $.ajax({
+      url: dotaURL,
+      method: "GET"
+  }).done(function(selected) {
+    // Sets the video to use from the api as videoID
+    var videoID = selected.videos[0]._id;
+    // Embeds the twitch video stream
+      new Twitch.Embed("twitchStream", {
+        width: 440,
+        height: 250,
+        video: videoID
+    });
+  });
+})
+
+$("#pubg").on("click", function(event){
+  event.preventDefault();
+  $("#twitchStream").empty();
+  var pubgURL = "https://api.twitch.tv/kraken/videos/top?client_id=ek5jw2l4w4l862xwyzmwlta09aewyd&game=PLAYERUNKNOWN%27S%20BATTLEGROUNDS";
+  $.ajax({
+      url: pubgURL,
+      method: "GET"
+  }).done(function(selected) {
+    // Sets the video to use from the api as videoID
+    var videoID = selected.videos[0]._id;
+    // Embeds the twitch video stream
+      new Twitch.Embed("twitchStream", {
+        width: 440,
+        height: 250,
+        video: videoID
+    });
+  });
+})
+
+$("#hero").on("click", function(event){
+  event.preventDefault();
+  $("#twitchStream").empty();
+  var heroURL = "https://api.twitch.tv/kraken/videos/top?client_id=ek5jw2l4w4l862xwyzmwlta09aewyd&game=Heroes%20of%20the%20Storm";
+  $.ajax({
+      url: heroURL,
+      method: "GET"
+  }).done(function(selected) {
+    // Sets the video to use from the api as videoID
+    var videoID = selected.videos[0]._id;
+    // Embeds the twitch video stream
+      new Twitch.Embed("twitchStream", {
+        width: 440,
+        height: 250,
+        video: videoID
+    });
+  });
+})
+
+$("#cs").on("click", function(event){
+  event.preventDefault();
+  $("#twitchStream").empty();
+  var csURL = "https://api.twitch.tv/kraken/videos/top?client_id=ek5jw2l4w4l862xwyzmwlta09aewyd&game=Counter-Strike:%20Global%20Offensive";
+  $.ajax({
+      url: csURL,
+      method: "GET"
+  }).done(function(selected) {
+    // Sets the video to use from the api as videoID
+    var videoID = selected.videos[0]._id;
+    // Embeds the twitch video stream
+      new Twitch.Embed("twitchStream", {
+        width: 440,
+        height: 250,
+        video: videoID
+    });
+  });
+})
