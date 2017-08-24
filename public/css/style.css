@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	background-color: #184561;
+	/*background-color: #184561;*/
+	background-color: #e4e9ed;
 }
 
 h2 {
@@ -12,6 +13,8 @@ h2 {
 .navbar-collapse, .navbar-brand, .container-fluid {
 	background-color: #040404;
 	color: white;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .navbar-brand, .navText {
@@ -19,10 +22,9 @@ h2 {
 }
 
 .navbar-default{
+	border-style: solid;
 	border-color: #040404 !important;
 }
-
-
 
 #myCarousel .carousel-caption {
     left:0;
@@ -54,4 +56,150 @@ h2 {
 @media (max-width: 991px) { 
 	.carousel-caption p,
 	#myCarousel .list-group {display:none;} 
+}
+
+a, li {
+	color: white;
+	text-decoration: none;
+}
+
+.dropdownGames, {
+	color: black;
+}
+
+.dropdown-toggle {
+	color: white !important;
+}
+
+
+#heroBackground {
+	position: relative;
+	margin-top: -20px;
+	background-image: url(https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/HS2U4YYVEH0B1436217117118.jpg);
+	height: 360px;
+	background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.7;
+    z-index: 1;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#centerText {
+	text-transform: uppercase;
+    font-family: 'Beaufort for LOL', serif;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.sub-text {
+	color: #f6f6f6;
+    font-size: 25px;
+    font-family: 'Spiegel-Regular', sans-serif;
+    font-weight: 300;
+
+}
+
+#signUp {
+	padding: 10px 20px 10px 20px;
+	border: solid;
+	background-color: red;
+}
+
+#heroBackground h1 {
+	padding: 50px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+}
+
+.about {
+	margin: 20px 0;
+	font-family: 'Beaufort for LOL', serif;
+	color: #8f8375;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,.15) 0 0 1px;
+
+}
+
+.aboutText {
+	position: relative;
+	margin: 0 6px 15px 6px;
+	font-family: 'Raleway', sans-serif;
+	color: #141414;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2;
+}
+
+.news, .twitchStreams {
+	border: solid;
+	text-align: center;
+	background-color: #141414;
+
+}
+
+.goldBorder {
+	border-style: solid;
+	border-color: #7e6243;
+}
+
+/*footer*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+   Margin bottom by footer height 
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+  background: 
+  /* color overlay */ 
+    linear-gradient(
+      rgba(0, 2, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* image to overlay */
+    url(https://backgroundtown.com/content/images/thumbs/0000550_solid-grey.png);
+   background-repeat: no-repeat;
+   background-position: top;
+   background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+
+
+
+.footertext {
+  color: #ffffff;
+  text-align: center;
+}
+
+#bottomContainer {
+	margin-bottom: 400px;
+}
+
+h4.footertext {
+	text-decoration: underline;
 }
