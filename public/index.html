@@ -12,6 +12,8 @@
     <!-- Allows me to use Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 </head>
 
@@ -40,86 +42,61 @@
 		      <ul class="nav navbar-nav navbar-right">
 		     <!--  fill in the hrefs -->
 		        <li><a class="navText" href="#">Home</a></li>
-				<li><a class="navText" href="#">Games</a></li>
+				<li class="dropdown">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Games
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a class="dropdownGames" href="#">LOL</a></li>
+			          <li><a href="#">HoTS</a></li>
+			          <li><a href="#">Dota 2</a></li>
+			        </ul>
+			    </li>
 				<li><a class="navText" href="#">PlayerBoards</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-	
+
+		<div id="heroBackground" class="hero hero--home force-fullwidth text-center vertical-align">
+			<div class="container vertical-align-middle">
+				<div class="">
+					<h1 id="centerText">E-Colosseum: A place for ESport fans</h1>
+					<div id="centerText" class="width-66p center-block">
+						<h2 class="sub-text">News and info about your favorite MOBA games!</h2>
+						<div class="padding-top-40 padding-bottom-20">
+							<a id="signUp" class="btn btn-riot btn-riotred" style="padding: 10px 20px 10px 20px;" href="/signin">Sign Up Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<div class="container">
-	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	    
-	      <!-- Wrapper for slides -->
-	      <div class="carousel-inner">
-	      
-	        <div class="item active">
-	          <img class="newsPics" src="http://1.bp.blogspot.com/_cl7mWdSDyA8/TMKLGGwg8_I/AAAAAAAAAGY/X1dl6n-QH4E/s1600/Kingdom-Hearts-Birth-By-Sleep-Front-Cover-47364.jpg">
-	           <div class="carousel-caption">
-	            <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
-	            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. <a class="label label-primary" href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank">Free Bootstrap Carousel Collection</a></p>
-	          </div>
-	        </div><!-- End Item -->
-	 
-	         <div class="item">
-	          <img class="newsPics" src="http://placehold.it/760x400/999999/cccccc">
-	           <div class="carousel-caption">
-	            <h4><a href="#">consetetur sadipscing elitr, sed diam nonumy eirmod</a></h4>
-	            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.></p>
-	          </div>
-	        </div><!-- End Item -->
-	        
-	        <div class="item">
-	          <img class="newsPics" src="http://placehold.it/760x400/dddddd/333333">
-	           <div class="carousel-caption">
-	            <h4><a href="#">tempor invidunt ut labore et dolore</a></h4>
-	            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-	          </div>
-	        </div><!-- End Item -->
-	        
-	        <div class="item">
-	          <img class="newsPics" src="http://placehold.it/760x400/999999/cccccc">
-	           <div class="carousel-caption">
-	            <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
-	            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-	          </div>
-	        </div><!-- End Item -->
-
-	        <div class="item">
-	          <img class="newsPics" src="http://placehold.it/760x400/dddddd/333333">
-	           <div class="carousel-caption">
-	            <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
-	            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-	          </div>
-	        </div><!-- End Item -->
-	                
-	      </div><!-- End Carousel Inner -->
 
 
-	    <ul class="list-group col-sm-4">
-	      <li id="news0" data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
-	      <li id="news1" data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
-	      <li id="news2" data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4>tempor invidunt ut labore et dolore</h4></li>
-	      <li id="news3" data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4>magna aliquyam erat, sed diam voluptua</h4></li>
-	      <li id="news4" data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4>tempor invidunt ut labore et dolore magna aliquyam erat</h4></li>
-	    </ul>
+		<div class="row">
 
-	      <!-- Controls -->
-	      <div class="carousel-controls">
-	          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-	            <span class="glyphicon glyphicon-chevron-left"></span>
-	          </a>
-	          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-	            <span class="glyphicon glyphicon-chevron-right"></span>
-	          </a>
-	      </div>
+			<div class="col-md-1">
 
-	    </div><!-- End Carousel -->
+			</div> 
+
+			<div class="col-md-10">
+
+				<h2 class="about">About EColosseum</h2>
+
+				<p class="aboutText">EColosseum is here for the gaming enthusiast. We give our users easy to access info about any recent and upcoming gaming news. From big tournaments to the top rated Twitch streamer we have all sorts of clean and accessible tools for the gaming enthuiest. Our goal is to be a hub for the MOBA gaming community where you can learn and talk about popular E-Sport events. EColosseum welcomes you to come on in and enhance your gaming experience.</p>
+			</div>
+
+		    <div class="col-md-1">
+			 
+			</div> 
+
+	    </div>
+
 	</div>
 
-	<div class="container">
+	<div id="bottomContainer" class="container">
 
 		<div class="row">
 
@@ -128,33 +105,54 @@
 			</div>
 
 			<div class="col-md-5">
-
+				
+				<div class="news">
 		<!-- 		"Recent Articles" with articles dynamically updating in the area -->
+					<div class="goldBorder">
 
-			<h2>News Articles</h2>
+						<h2>News Articles</h2>
 
-			<hr>
+							<hr>
 
-			<ul>
-				<a href=""><li> Article 1</li></a>
-				<li>Article 2</li>
-				<li>Article 3</li>
-				<li>Article 4</li>
-				<li>Article 5</li>
-				<li>Article 6</li>
-			</ul>
+							<ul>
+								<li><a href=""> Article 1</a></li>
+								<li><a href="">Article 2</a></li>
+								<li><a href="">Article 3</a></li>
+								<li><a href="">Article 4</a></li>
+								<li><a href="">Article 5</a></li>
+							</ul>
+
+					</div>
+
+				</div>
 
 
 			</div>
 
 			<div class="col-md-5">
 
-		<!-- Top Twitch Stream with video embedded -->
-			<h2>Twitch Streams</h2>
+				<div class="twitchStreams">
 
-			<hr>
+					<div class="goldBorder">
 
-			<!-- Embed Twitch video here -->
+			<!-- Top Twitch Stream with video embedded -->
+						<h2>Twitch Streams</h2>
+
+						<hr>
+
+						<ul>
+							<li><a href="">League of Legends</a></li>
+							<li><a href="">Dota 2</a></li>
+							<li><a href="">Player Unknown Battle Ground</a></li>
+							<li><a href="">Heros of the Storm</a></li>
+							<li><a href="">Counter Strike: GO</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+			
 
 			</div>
 
@@ -166,6 +164,44 @@
 		</div>
 
 
+	</div>
+
+	<!-- footer -->
+
+	<div id="footer">
+	    <div class="container">
+	        <div class="row">
+	            <h3 class="footertext">About Team:</h3>
+	            <br>
+	              <div class="col-md-4">
+	                <center>
+	                  <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+	                  <br>
+	                  <h4 class="footertext">Back-End Development</h4>
+	                  <p class="footertext">Finn Olsen and Stephen Wong<br>
+	                </center>
+	              </div>
+	              <div class="col-md-4">
+	                <center>
+	                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+	                  <br>
+	                  <h4 class="footertext">Design</h4>
+	                  <p class="footertext">Evan Glickman and Patrick Castanos<br>
+	                </center>
+	              </div>
+	              <div class="col-md-4">
+	                <center>
+	                  <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+	                  <br>
+	                  <h4 class="footertext">APIs Used</h4>
+	                  <p class="footertext">Steam API<br>Twitch API<br>
+	                </center>
+	              </div>
+	            </div>
+	            <div class="row">
+	            <p><center><a href="#">UCF Coding Bootcamp</a> <p class="footertext">Copyright 2017</p></center></p>
+	        </div>
+	    </div>
 	</div>
 
 	<script type="text/javascript">
@@ -192,12 +228,13 @@
 			});
 		})
 
-		$(window).load(function() {
-		    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-		    var itemlength = $('#myCarousel .item').length;
-		    var triggerheight = Math.round(boxheight/itemlength+1);
-			$('#myCarousel .list-group-item').outerHeight(triggerheight);
-		});
+	$(window).load(function() {
+	    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+	    var itemlength = $('#myCarousel .item').length;
+	    var triggerheight = Math.round(boxheight/itemlength+1);
+		$('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
+
 	</script>
 
 	<script type="text/javascript" src="logic/logic.js"></script>
