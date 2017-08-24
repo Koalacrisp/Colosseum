@@ -10,7 +10,7 @@ module.exports = function(app) {
     }).then(function(dbComment) {
       // We have access to the comments as an argument inside of the callback function
       var hbsObject = {
-        burgers: dbComment
+        comments: dbComment
       };
       res.render("index", hbsObject);
     });
@@ -22,7 +22,8 @@ module.exports = function(app) {
     // into our table. In this case we just we pass in an object with a text and
     // complete property
     db.Comment.create({
-      userName: req.body.userName
+      userName: req.body.userName,
+      comment: req.body.comment
     }).then(function(dbComment) {
       // We have access to the new comment as an argument inside of the callback function
       res.redirect("/");
@@ -44,20 +45,3 @@ module.exports = function(app) {
     });
 
   });
-
-  // PUT route for updating comments. We can get the updated comment data from req.body
-  app.put("/:id", function(req, res) {
-    var condition = req.params.id;
-    db.Comment.update({
-      comment: req.body.devoured
-    }, {
-      where: {
-        id: condition
-      }
-    })
-    .then(function() {
-      res.redirect("/");
-    });
-
-  });
-};
