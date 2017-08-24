@@ -16,8 +16,8 @@ $.ajax({
 	var videoID = selected.videos[0]._id;
 	// Embeds the twitch video stream
     new Twitch.Embed("twitchStream", {
-   		width: 640,
-   		height: 420,
+   		width: 440,
+   		height: 250,
    		video: videoID
 	});
 });
