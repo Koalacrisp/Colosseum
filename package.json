@@ -1,0 +1,31 @@
+{
+  "name": "colosseum",
+  "version": "1.0.0",
+  "description": "An e-Sports informational website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koalacrisp/Colosseum.git"
+  },
+  "author": "team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koalacrisp/Colosseum/issues"
+  },
+  "homepage": "https://github.com/Koalacrisp/Colosseum#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1",
+    "orm": "^3.2.4",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.3.1",
+    "jquery": "^3.2.1"
+  }
+}
