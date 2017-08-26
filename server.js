@@ -19,8 +19,14 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Override with POST having ?_method=DELETE
 app.use(methodOverride("_method"));
 
+// Set Handlebars.
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // Import routes and give the server access to them.
-require("./controllers/burger_controller.js")(app);
+require("./controllers/commentsController.js")(app);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {

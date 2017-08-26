@@ -6,9 +6,7 @@ module.exports = function(app) {
   // GET route for getting all of the comments
   app.get("/", function(req, res) {
     // findAll returns all entries for a table when used with no options
-    db.Comment.findAll({
-    }).then(function(dbComment) {
-      // We have access to the comments as an argument inside of the callback function
+    db.Comment.findAll({}).then(function(dbComment) {
       var hbsObject = {
         comments: dbComment
       };
@@ -45,3 +43,4 @@ module.exports = function(app) {
     });
 
   });
+};
