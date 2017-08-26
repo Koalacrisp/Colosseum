@@ -46,12 +46,12 @@
 			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Games
 			        <span class="caret"></span></a>
 			        <ul class="dropdown-menu">
-			          <li><a class="dropdownGames" href="#">LOL</a></li>
+			          <li><a class="dropdownGames" href="#">LOL</a> <img src="assets/images/LOL.jpg"> </li>
 			          <li><a href="#">HoTS</a></li>
 			          <li><a href="#">Dota 2</a></li>
 			        </ul>
 			    </li>
-				<li><a class="navText" href="#">PlayerBoards</a></li>
+				<li><a class="navText" href="twitch.html">Twitch</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -115,11 +115,15 @@
 							<hr>
 
 							<ul>
-								<li><a href=""> Article 1</a></li>
-								<li><a href="">Article 2</a></li>
-								<li><a href="">Article 3</a></li>
-								<li><a href="">Article 4</a></li>
-								<li><a href="">Article 5</a></li>
+								<a href=""> Article 1</a>
+								<br>
+								<a href="">Article 2</a>
+								<br>
+								<a href="">Article 3</a>
+								<br>
+								<a href="">Article 4</a>
+								<br>
+								<a href="">Article 5</a>
 							</ul>
 
 					</div>
@@ -144,11 +148,15 @@
             			</div>
 
 						<ul>
-							<li><a id="lol">League of Legends</a></li>
-							<li><a id="dota">Dota 2</a></li>
-							<li><a id="pubg">Player Unknown Battle Ground</a></li>
-							<li><a id="hero">Heroes of the Storm</a></li>
-							<li><a id="cs">Counter Strike: GO</a></li>
+							<a href="">League of Legends<img src="assets/images/LOL.jpg"></a>
+							<br>
+							<a href="">Dota 2</a>
+							<br>
+							<a href="">Player Unknown Battle Ground</a>
+							<br>
+							<a href="">Heros of the Storm</a>
+							<br>
+							<a href="">Counter Strike: GO</a>
 						</ul>
 
 					</div>
@@ -187,7 +195,7 @@
 	                  <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
 	                  <br>
 	                  <h4 class="footertext">Design</h4>
-	                  <p class="footertext">Evan Glickman and Patrick Castanos<br>
+	                  <p class="footertext">Evan Glickman<br>
 	                </center>
 	              </div>
 	              <div class="col-md-4">
@@ -200,43 +208,13 @@
 	              </div>
 	            </div>
 	            <div class="row">
-	            <p><center><a href="#">UCF Coding Bootcamp</a> <p class="footertext">Copyright 2017</p></center></p>
+	            <p><center><a href="#">Team Name: Team</a> <p class="footertext">Copyright 2017</p></center></p>
 	        </div>
 	    </div>
 	</div>
 
-	<script type="text/javascript">
-		$(document).ready(function(){
-    
-			var clickEvent = false;
-			$('#myCarousel').carousel({
-				interval:   4000	
-			}).on('click', '.list-group li', function() {
-					clickEvent = true;
-					$('.list-group li').removeClass('active');
-					$(this).addClass('active');		
-			}).on('slid.bs.carousel', function(e) {
-				if(!clickEvent) {
-					var count = $('.list-group').children().length -1;
-					var current = $('.list-group li.active');
-					current.removeClass('active').next().addClass('active');
-					var id = parseInt(current.data('slide-to'));
-					if(count == id) {
-						$('.list-group li').first().addClass('active');	
-					}
-				}
-				clickEvent = false;
-			});
-		})
 
-	$(window).load(function() {
-	    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-	    var itemlength = $('#myCarousel .item').length;
-	    var triggerheight = Math.round(boxheight/itemlength+1);
-		$('#myCarousel .list-group-item').outerHeight(triggerheight);
-});
 
-	</script>
 
 	<script type="text/javascript" src="logic/logic.js"></script>
 	<!-- Logic for loading Twitch video -->
