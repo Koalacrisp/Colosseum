@@ -16,8 +16,8 @@ $.ajax({
 	var videoID = selected.videos[0]._id;
 	// Embeds the twitch video stream
     new Twitch.Embed("twitchStream", {
-   		width: 440,
-   		height: 250,
+   		width: "100%",
+   		height: 520,
    		video: videoID
 	});
 });
@@ -34,8 +34,8 @@ $("#lol").on("click", function(event){
     var videoID = selected.videos[0]._id;
     // Embeds the twitch video stream
       new Twitch.Embed("twitchStream", {
-        width: 440,
-        height: 250,
+        width: "100%",
+        height: 520,
         video: videoID
     });
   });
@@ -53,8 +53,8 @@ $("#dota").on("click", function(event){
     var videoID = selected.videos[0]._id;
     // Embeds the twitch video stream
       new Twitch.Embed("twitchStream", {
-        width: 440,
-        height: 250,
+        width: "100%",
+        height: 520,
         video: videoID
     });
   });
@@ -72,8 +72,8 @@ $("#pubg").on("click", function(event){
     var videoID = selected.videos[0]._id;
     // Embeds the twitch video stream
       new Twitch.Embed("twitchStream", {
-        width: 440,
-        height: 250,
+        width: "100%",
+        height: 520,
         video: videoID
     });
   });
@@ -91,8 +91,8 @@ $("#hero").on("click", function(event){
     var videoID = selected.videos[0]._id;
     // Embeds the twitch video stream
       new Twitch.Embed("twitchStream", {
-        width: 440,
-        height: 250,
+        width: "100%",
+        height: 520,
         video: videoID
     });
   });
@@ -110,8 +110,8 @@ $("#cs").on("click", function(event){
     var videoID = selected.videos[0]._id;
     // Embeds the twitch video stream
       new Twitch.Embed("twitchStream", {
-        width: 440,
-        height: 250,
+        width: "100%",
+        height: 520,
         video: videoID
     });
   });

@@ -14,6 +14,17 @@ module.exports = function(app) {
     });
   });
 
+  // GET route for getting all of the comments
+  app.get("/twitch", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Comment.findAll({}).then(function(dbComment) {
+      var hbsObject = {
+        comments: dbComment
+      };
+      res.render("twitch", hbsObject);
+    });
+  });
+
   // POST route for saving a new comment
   app.post("/", function(req, res) {
     // create takes an argument of an object describing the item we want to insert
