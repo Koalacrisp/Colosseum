@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Twitch Videos</title>
+    <!-- bootstap html and css elemets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--links my css page -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Allows me to use JQuery -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Allows me to use Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    
+
+        <!-- Navbar bar (Games, News, Main) -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">ECollosseum</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+              <ul class="nav navbar-nav navbar-right">
+             <!--  fill in the hrefs -->
+                <li><a class="navText" href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Games
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdownGames" href="#">LOL</a></li>
+                      <li><a href="#">HoTS</a></li>
+                      <li><a href="#">Dota 2</a></li>
+                    </ul>
+                </li>
+                <li><a class="navText" href="twitch.html">Twitch</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-md-1">
+
+            </div> 
+
+            <div class="col-md-10">
+
+                <h2 class="about">Top Stream</h2>
+
+            </div>
+
+            <div class="col-md-1">
+             
+            </div> 
+
+        </div>
+
+    </div>
+
+    <div id="bottomContainer" class="container">
+
+        <div class="row">
+
+            <div class="col-md-1">
+                <!-- White Space -->
+            </div>
+
+            <div class="col-md-10">
+            
+
+                <div class="twitchStreams">
+
+                    <div class="goldBorder">
+
+            <!-- Top Twitch Stream with video embedded -->
+                        <h2>Twitch Streams</h2>
+
+                        <hr>
+            
+                        <div id="twitchStream">
+                        </div>
+
+                        <ul>
+                            <a href="">League of Legends</a>
+                            <br>
+                            <a href="">Dota 2</a>
+                            <br>
+                            <a href="">Player Unknown Battle Ground</a>
+                            <br>
+                            <a href="">Heros of the Storm</a>
+                            <br>
+                            <a href="">Counter Strike: GO</a>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-1">
+                <!-- White Space -->
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+        
+            <div class="widget-area no-padding blank">
+                <div class="status-upload">
+                    <form>
+                        <textarea id="comment" placeholder="What are your thought on this stream?" ></textarea>
+                        <button id="submit" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Comment</button>
+                    </form>
+                </div><!-- Status Upload  -->
+            </div><!-- Widget Area -->
+
+            
+                <!--  start comment thing    -->
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h3>User Comments</h3>
+            </div><!-- /col-sm-12 -->
+
+        </div><!-- /row -->
+
+        <div class="row">
+
+        <div id="appendCommentBox"><!-- comment box here --></div>
+
+            <div class="col-sm-1">
+
+            </div><!-- /col-sm-1 -->
+
+            <div class="col-sm-10">
+
+
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <strong>myusername</strong>
+                        <span class="text-muted">commented 5 days ago</span>
+                    </div>
+
+                    <div id="appendComment" class="panel-body">
+                    
+                    </div><!-- /panel-body -->
+
+                </div><!-- /panel panel-default -->
+            </div><!-- /col-sm-10 -->
+
+            <div class="col-sm-1">
+
+            </div><!-- /col-sm-1 -->
+
+
+        </div><!-- /row -->
+
+            
+        </div>
+
+        <div class="col-md-2"></div>
+
+        </div>
+
+
+    </div>
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <h3 class="footertext">About Team:</h3>
+                <br>
+                  <div class="col-md-4">
+                    <center>
+                      <img src="http://oi60.tinypic.com/w8lycl.jpg" class="img-circle" alt="the-brains">
+                      <br>
+                      <h4 class="footertext">Back-End Development</h4>
+                      <p class="footertext">Finn Olsen and Stephen Wong<br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                      <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
+                      <br>
+                      <h4 class="footertext">Design</h4>
+                      <p class="footertext">Evan Glickman and Patrick Castanos<br>
+                    </center>
+                  </div>
+                  <div class="col-md-4">
+                    <center>
+                      <img src="http://oi61.tinypic.com/307n6ux.jpg" class="img-circle" alt="...">
+                      <br>
+                      <h4 class="footertext">APIs Used</h4>
+                      <p class="footertext">Steam API<br>Twitch API<br>
+                    </center>
+                  </div>
+                </div>
+                <div class="row">
+                <p><center><a href="#">Team Name: Team</a> <p class="footertext">Copyright 2017</p></center></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="logic/logic.js"></script>
+    <!-- Logic for loading Twitch video -->
+    <script type="text/javascript" src="logic/index.js"></script>
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script type="text/javascript" src="logic/comments.js"></script>
+
+</body>
+</html>
