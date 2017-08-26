@@ -35,7 +35,7 @@ module.exports = function(app) {
       comment: req.body.comment
     }).then(function(dbComment) {
       // We have access to the new comment as an argument inside of the callback function
-      res.redirect("/");
+      res.redirect("/twitch");
     });
 
   });
