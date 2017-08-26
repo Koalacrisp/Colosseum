@@ -1,14 +1,14 @@
-$("#submit").click(function(event){
+// $("#submit").click(function(event){
 
-    event.preventDefault();
-    console.log("click working");
+//     event.preventDefault();
+//     console.log("click working");
 
-    var comment = $("#comment").val();
+//     var comment = $("#comment").val();
 
-    console.log(comment);
+//     console.log(comment);
 
-    $("#appendComment").append(comment);
+//     $("#appendComment").append(comment);
 
-   $("#comment").attr("placeholder", "Place Comment Here").val("").focus().blur();
+//    $("#comment").attr("placeholder", "Place Comment Here").val("").focus().blur();
 
-})
+// })
