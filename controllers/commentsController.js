@@ -1,4 +1,4 @@
-
+var moment = require("moment");
 var db = require("../models");
 
 module.exports = function(app) {
@@ -30,9 +30,13 @@ module.exports = function(app) {
     // create takes an argument of an object describing the item we want to insert
     // into our table. In this case we just we pass in an object with a text and
     // complete property
+    var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+    console.log("THIS RIGHT HERE: " + currentTime);
     db.Comment.create({
       userName: req.body.userName,
-      comment: req.body.comment
+      comment: req.body.comment,
+      time: currentTime
     }).then(function(dbComment) {
       // We have access to the new comment as an argument inside of the callback function
       res.redirect("/twitch");
