@@ -5,14 +5,21 @@ module.exports = function(sequelize, DataTypes) {
     	validate: {
     		len: [1, 50]
       },
-      allowNull: false,
+      allowNull: false
     },
     comment: {
       type: DataTypes.STRING,
       validate: {
         len: [1, 140]
       },
-      allowNull: false,
+      allowNull: false
+    },
+    time: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 140]
+      },
+      allowNull: false
     }
   });
   return Comment;
