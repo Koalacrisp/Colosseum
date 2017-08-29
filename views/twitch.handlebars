@@ -142,19 +142,17 @@
 
         </div><!-- /row -->
 
-        <div class="row">
+        {{#each comments}}
 
-        <div id="appendCommentBox"><!-- comment box here --></div>
+        <div class="row">
 
             <div class="col-sm-1">
 
             </div><!-- /col-sm-1 -->
-
+            
             <div class="col-sm-10">
-
-
                 <div class="panel panel-default">
-                {{#each comments}}
+                
                     <div class="panel-heading">
                         <strong>{{this.userName}}</strong>
                         <span class="text-muted">{{this.time}}</span>
@@ -163,17 +161,17 @@
                     <div id="appendComment" class="panel-body">
                     {{this.comment}}
                     </div><!-- /panel-body -->
-                {{/each}}
+                
                 </div><!-- /panel panel-default -->
             </div><!-- /col-sm-10 -->
-
+            
             <div class="col-sm-1">
 
             </div><!-- /col-sm-1 -->
 
-
         </div><!-- /row -->
 
+        {{/each}}
             
         </div>
 
