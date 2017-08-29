@@ -272,7 +272,15 @@ resize:vertical;
 outline:none;
 border: 1px solid #F2F2F2;
 }
-
+#abcRioButtonContents {
+	display: inline-block;
+    background: #e5090b ;
+    color: black;
+    width: 80px;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 34px;
+}
 .status-upload ul {
 float: left;
 list-style: none outside none;
