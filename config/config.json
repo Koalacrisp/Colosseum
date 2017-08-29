@@ -1,11 +1,9 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "SQLmy123",
-=======
+
     "password": "YOURPASSWORDHERE",
->>>>>>> 4b2cef6f3f5f2f1f07f358f429e16497c2a9773c
+
     "database": "colosseum_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
