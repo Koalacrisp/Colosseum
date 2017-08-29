@@ -63,6 +63,7 @@ a, li {
 	color: white;
 	text-decoration: none;
 	line-height: 2;
+	font-family: 'Raleway', sans-serif;
 }
 
 .dropdownGames, {
@@ -359,4 +360,45 @@ margin-right: 7px;
 .panel>.panel-heading:before{
 	border-right-color:#ddd;
 	border-width:8px;
+}
+
+.gamesArticles {
+	margin: 20px 0 15px 0;
+}
+
+.gamePic {
+	width: 600px;
+	height: 400px;
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  	#footer{
+  		height: 1000px;
+  	}
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	  	#footer{
+  		height: 1000px;
+  	}
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	  	#footer{
+  		height: 1000px;
+  	}
 }
