@@ -63,6 +63,7 @@ a, li {
 	color: white;
 	text-decoration: none;
 	line-height: 2;
+	font-family: 'Raleway', sans-serif;
 }
 
 .dropdownGames, {
@@ -359,4 +360,13 @@ margin-right: 7px;
 .panel>.panel-heading:before{
 	border-right-color:#ddd;
 	border-width:8px;
+}
+
+.gamesArticles {
+	margin: 20px 0 15px 0;
+}
+
+.gamePic {
+	width: 600px;
+	height: 400px;
 }
