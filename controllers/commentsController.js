@@ -14,6 +14,36 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/games1", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Comment.findAll({}).then(function(dbComment) {
+      var hbsObject = {
+        comments: dbComment
+      };
+      res.render("games1", hbsObject);
+    });
+  });
+
+  app.get("/games2", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Comment.findAll({}).then(function(dbComment) {
+      var hbsObject = {
+        comments: dbComment
+      };
+      res.render("games2", hbsObject);
+    });
+  });
+
+  app.get("/games3", function(req, res) {
+    // findAll returns all entries for a table when used with no options
+    db.Comment.findAll({}).then(function(dbComment) {
+      var hbsObject = {
+        comments: dbComment
+      };
+      res.render("games3", hbsObject);
+    });
+  });
+
   // GET route for getting all of the comments
   app.get("/twitch", function(req, res) {
     // findAll returns all entries for a table when used with no options

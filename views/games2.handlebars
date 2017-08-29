@@ -1,6 +1,5 @@
-<!-- Navbar -->
+    <!-- Navbar -->
     
-
         <!-- Navbar bar (Games, News, Main) -->
         <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -12,15 +11,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">ECollosseum</a>
+              <a class="navbar-brand" href="#">ECollosseum</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         
               <ul class="nav navbar-nav navbar-right">
              <!--  fill in the hrefs -->
-                <li><a class="navText" href="/">Home</a></li>
+                <li><a class="navText" href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Games
                     <span class="caret"></span></a>
@@ -35,155 +33,63 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-
-
     <div class="container">
-
-
         <div class="row">
-
             <div class="col-md-1">
-
             </div> 
-
             <div class="col-md-10">
-
-                <h2 class="about">Top Stream</h2>
-
+                <h2 class="about">Game:</h2>
             </div>
-
             <div class="col-md-1">
              
             </div> 
-
         </div>
-
     </div>
-
     <div id="bottomContainer" class="container">
-
         <div class="row">
-
             <div class="col-md-1">
                 <!-- White Space -->
             </div>
-
             <div class="col-md-10">
             
-
                 <div class="twitchStreams">
-
                     <div class="goldBorder">
-
             <!-- Top Twitch Stream with video embedded -->
-                        <h2>Twitch Streams</h2>
-
+                        <h2>Heroes of the Storm</h2>
                         <hr>
             
-                        <div id="twitchStream">
+                        <div>
+                            <img class="gamePic" src="http://media.blizzard.com/heroes/images/icons/heroes-facebook-preview-bcon.jpg">
                         </div>
-
-                        <ul>
-                            <a id="lol" href="#">League of Legends</a>
-                            <br>
-                            <a id="dota" href="#">Dota 2</a>
-                            <br>
-                            <a id="pubg" href="#">Player Unknown Battle Ground</a>
-                            <br>
-                            <a id="hero" href="#">Heros of the Storm</a>
-                            <br>
-                            <a id="cs" href="#">Counter Strike: GO</a>
-                        </ul>
-
+                        
+                        <div class="gamesArticles">
+                       <!--  maybe twitch stream here? -->
+                            <ul>
+                                <a href="">Article</a>
+                                <br>
+                                <a href="">Article</a>
+                                <br>
+                                <a href="">Article</a>
+                                <br>
+                                <a href="">Article</a>
+                                <br>
+                                <a href="">Article</a>
+                            </ul>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
             <div class="col-md-1">
                 <!-- White Space -->
             </div>
-
-
         </div>
-
         <div class="row">
-
         <div class="col-md-2"></div>
-
-        <div class="col-md-8">
-        
-            <div class="widget-area no-padding blank">
-                <div class="status-upload">
-                    <form id="commentForm" action="/" method="POST">
-                        <label for="user"><h4>User Name</h4></label>
-                        <br>
-                        <input type="text" id="user" name="userName">
-
-                        <br>
-
-                        <label for="comment"><h4>Comment</h4></label>
-                        <br>
-                        <textarea rows="5" cols="100" id="comment" placeholder="What are your thought on this stream?" name="comment" form="commentForm"></textarea>
-                        
-                        <button id="submit" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Comment</button>
-                    </form>
-                </div><!-- Status Upload  -->
-            </div><!-- Widget Area -->
-
-            
-                <!--  start comment thing    -->
-        <div class="row">
-
-            <div class="col-sm-12">
-                <h3>User Comments</h3>
-            </div><!-- /col-sm-12 -->
-
-        </div><!-- /row -->
-
-        {{#each comments}}
-
-        <div class="row">
-
-            <div class="col-sm-1">
-
-            </div><!-- /col-sm-1 -->
-            
-            <div class="col-sm-10">
-                <div class="panel panel-default">
-                
-                    <div class="panel-heading">
-                        <strong>{{this.userName}}</strong>
-                        <span class="text-muted">{{this.time}}</span>
-                    </div>
-
-                    <div id="appendComment" class="panel-body">
-                    {{this.comment}}
-                    </div><!-- /panel-body -->
-                
-                </div><!-- /panel panel-default -->
-            </div><!-- /col-sm-10 -->
-            
-            <div class="col-sm-1">
-
-            </div><!-- /col-sm-1 -->
-
-        </div><!-- /row -->
-
-        {{/each}}
-            
-        </div>
-
+        <div class="col-md-8"></div>
         <div class="col-md-2"></div>
-
         </div>
-
-
     </div>
-
     <!-- footer -->
-
     <div id="footer">
         <div class="container">
             <div class="row">
@@ -202,7 +108,7 @@
                       <img src="http://oi60.tinypic.com/2z7enpc.jpg" class="img-circle" alt="...">
                       <br>
                       <h4 class="footertext">Design</h4>
-                      <p class="footertext">Evan Glickman and Patrick Castanos<br>
+                      <p class="footertext">Evan Glickman<br>
                     </center>
                   </div>
                   <div class="col-md-4">
@@ -215,19 +121,13 @@
                   </div>
                 </div>
                 <div class="row">
-                <p><center><a href="https://github.com/Koalacrisp/Colosseum">Team Name: Team</a> <p class="footertext">Copyright 2017</p></center></p>
+                <p><center><a href="#">Team Name: Team</a> <p class="footertext">Copyright 2017</p></center></p>
             </div>
         </div>
     </div>
-
-
-
-
     <script type="text/javascript" src="logic/logic.js"></script>
     <!-- Logic for loading Twitch video -->
     <script type="text/javascript" src="logic/index.js"></script>
     <!-- Load the Twitch embed script -->
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <!--MomentJS-->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script type="text/javascript" src="logic/comments.js"></script>
