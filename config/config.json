@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
 
-    "password": "YOURPASSWORDHERE",
+    "password": "",
 
     "database": "colosseum_db",
     "host": "127.0.0.1",
@@ -16,10 +16,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "jawsDb",
-    "password": "jawsDb",
-    "database": "jawsDb",
-    "host": "jawsDb",
+    "username": "n4tr6phxyhgki6kg",
+    "password": "rh20qq3f4malyfm4",
+    "database": "zlxg0723qzseawqb",
+    "host": "iwqrvsv8e5fz4uni.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
