@@ -1,74 +1,39 @@
-// var query = "https://api.pandascore.co/some-url?token=";
-// var authKey = "P4d_hRb3PlaBco7fuvpHRHLer08aIhFZxI09YiqRJgGejv8S7y0";
-// var queryURL = query + authKey;
+// Globals
+var games = ["570", "730","578080", "440", "611500"];
+var titles = [];
+var descriptions = [];
 
+// Dependencies
+var request = require("request");
 
+// Function for obtaining news information
+newsGet = function(){
+    for (i=0; i<games.length; i++){
+        var queryURL = "http://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?key=A66515A25DEC193402713FEC996E3CD3&appid=" + games[i] + "&count=3&maxlength=300";
+        request(queryURL, function(error, response, body){
+            var parseIt = JSON.parse(body);
+            titles.push(parseIt.appnews.newsitems[1].title);
+            descriptions.push(parseIt.appnews.newsitems[1].contents);
+            console.log(titles);
+            console.log(descriptions);
+        });
+    };
+};
 
+newsGet();
 
+// Function for appending the information to the page
+newsAppend = function(){
+    for(i=0; i<titles.length; i++){
+        var list = document.createElement("LI");
+        var node = document.createTextNode(titles[i]);
+        var para = document.createElement("P");
+        var desNode = document.createTextNode(descriptions[i]);
+        para.appendChild(desNode);
+        node.appendChild(para);
+        list.appendChild(node);
+        document.getElementById("articles").appendChild(list);
+    };
+};
 
-// var authKeyGB = "954d6fc874d3054e3aaddad992618621b28c2097";
-// var queryURLGB = "http://www.giantbomb.com/api/game/3030-4725/?api_key=" + authKeyGB;
-
-// console.log(queryURLGB);
-// //function newsAPI()
-// function runQuery(numArticles, queryURL) {
-
-//   // The AJAX function uses the queryURL and GETS the JSON data associated with it.
-//   // The data then gets stored in the variable called: "NYTData"
-// 	console.log("hello");
-//   $.ajax({
-//     url: queryURLGB,
-//     method: "GET"
-//   }).done(function(response) {
-
-//     // Logging the URL so we have access to it for troubleshooting
-//     console.log("------------------------------------");
-//     console.log("finished");
-//     console.log("URL: " + queryURLGB);
-//     console.log("------------------------------------");
-
-   
-//     console.log();
-//     console.log("------------------------------------");
-//     //console.log(esportData);
-//     console.log(response);
-
-
-   
-//   });
-
-// }
-
-// runQuery();
-
-
-
-var apikey = "954d6fc874d3054e3aaddad992618621b28c2097";
-var baseUrl = "http://www.giantbomb.com/api";
-
-// construct the uri with our apikey
-var GamesSearchUrl = baseUrl + '/search/?api_key=' + apikey + '&format=jsonp&json_callback=data';
-var query = "Batman";
-
-$(document).ready(function() {
-
-  // send off the query
-  $.ajax({
-    url: GamesSearchUrl + '&query=' + encodeURI(query),
-    dataType: "json",
-    success: searchCallback
-  });
-
-
-    // callback for when we get back the results
-    function searchCallback(data) {
-        // $('body').append('Found ' + data.total + ' results for ' + query);
-        var games = data.game;
-        console.log(data);
-        // $.each(games, function(index, game) {
-        //     $('body').append('<h1>' + game.name + '</h1>');
-        //     $('body').append('<p>' + game.description + '</p>');
-        //     $('body').append('<img src="' + game.posters.thumbnail + '" />');
-        // });
-    }
-});
+newsAppend();
